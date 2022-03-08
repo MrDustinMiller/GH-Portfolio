@@ -1,0 +1,174 @@
+
+/*
+remove default margin/padding
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+/*
+ceates some padding between the page header and the boxes
+*/
+.pageHeader 
+{
+    padding-right: 10%;
+}
+
+/*
+cuts border of image to be rounded and adds some margin to the image for formatting
+*/
+img 
+{
+    margin: 7%;
+    border-radius: 50%;
+}
+
+/*
+resizes the original image to fit the display better
+*/
+.resize
+{
+    width: 300px;
+    height: auto;
+}
+
+/*
+flex property makes content more responsive and be able to accomany multiple lines, align-items aligns flex items at the center.
+*/
+body
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    
+
+}
+
+/*
+creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line.
+*/
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+/*
+create a card class that controls the size/how the cards are layered and spaced out
+*/
+.container .card
+{
+    position: relative;
+    min-width: 320px;
+    height: 420px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px -px 5px rgba(0,0,0,0.5),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/*
+creats a class that manipulates our cards into boxes. formats/designs the boxes look
+*/
+.container .card .box 
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background:#ebf5ff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*
+creates a mouse hover effect on the boxes
+*/
+.container .card:hover .box 
+{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    
+}
+
+/*
+controls the box heading color when the mouse hovers over the box
+*/
+.container .card:hover .box .boxHeading h3
+{
+    color: rgb(0, 0, 0);
+}
+
+/*
+controls the color of the number on the boxes when a mouse hovers over it
+*/
+.container .card:hover .box .boxHeading h2
+{
+    color: rgba(0, 0, 0, 0.123);
+}
+
+/*
+move the box's header to center
+*/
+.container .card .box .boxHeading
+{
+    padding: 20px;
+    text-align: center;
+}
+
+/*
+puts box number in the back of the box behind content
+*/
+.container .card .box .boxHeading h2
+{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.05);
+    transition: 0.5%;
+    pointer-events: none;
+}
+
+/*
+controls the box heading color and font size
+*/
+.container .card .box .boxHeading h3
+{
+    font-size: 1.8em;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    transition: 0.5%;
+}
+
+/*
+adjusts the texts color/format inside of each box
+*/
+.container .card .box .boxHeading p
+{
+   font-size: 1em;
+   font-weight: 300;
+   color: #777;
+   z-index: 1;
+   transition: 0.5%;
+}
+
