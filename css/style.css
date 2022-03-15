@@ -39,6 +39,7 @@ resizes the original image to fit the display better
 
 /*
 flex property makes content more responsive and be able to accomany multiple lines, align-items aligns flex items at the center.
+linear gradients give us the doubl color. the percentages and degrees give us the diagnal shape and how deep a color is.
 */
 body
 {
@@ -48,7 +49,10 @@ body
     display: flex;
     align-items: center;
     min-height: 100vh;
+<<<<<<< HEAD
     background-color: rgb(253, 255, 240);
+=======
+>>>>>>> origin/main
     background-color: #f87f73;
     background-image: -webkit-linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #292423 60%, #292423 60%);
     background-image: linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #00ffd5 60%, #00ffd5 60%);
@@ -84,7 +88,11 @@ align the text to the left in the fourth box
  */
 a:visited 
 {
+<<<<<<< HEAD
    color: rgba(154, 3, 192, 0.89);
+=======
+    color: rgba(154, 3, 192, 0.89);
+>>>>>>> origin/main
 }
  
  /*
@@ -201,7 +209,11 @@ adjusts the texts color/format inside of each box
 {
    font-size: 1em;
    font-weight: 300;
+<<<<<<< HEAD
    color:rgb(255,255,255);
+=======
+   color: rgb(255, 255, 255);
+>>>>>>> origin/main
    z-index: 1;
    transition: 0.5%;
 }
