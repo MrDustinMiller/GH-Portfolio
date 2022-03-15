@@ -39,6 +39,7 @@ resizes the original image to fit the display better
 
 /*
 flex property makes content more responsive and be able to accomany multiple lines, align-items aligns flex items at the center.
+linear gradients give us the doubl color. the percentages and degrees give us the diagnal shape and how deep a color is.
 */
 body
 {
@@ -48,7 +49,9 @@ body
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(253, 255, 240);
+    background-color: #f87f73;
+    background-image: -webkit-linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #292423 60%, #292423 60%);
+    background-image: linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #00ffd5 60%, #00ffd5 60%);
 }
 
 /*
@@ -123,7 +126,7 @@ creats a class that manipulates our cards into boxes. formats/designs the boxes 
     left: 20px;
     right: 20px;
     bottom: 20px;
-    background:#ebf5ff;
+    background:#808080;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     border-radius: 15px;
     display: flex;
@@ -198,7 +201,7 @@ adjusts the texts color/format inside of each box
 {
    font-size: 1em;
    font-weight: 300;
-   color: #777;
+   color: rgb(255, 255, 255);
    z-index: 1;
    transition: 0.5%;
 }
