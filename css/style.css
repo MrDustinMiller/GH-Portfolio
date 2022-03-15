@@ -48,11 +48,43 @@ body
     display: flex;
     align-items: center;
     min-height: 100vh;
-    
-
+    background-color: rgb(253, 255, 240);
 }
 
 /*
+controls the color under our heading
+*/
+.p1 
+{
+    color: #444;
+}
+
+/*
+controls the color of our heading
+*/
+ h1 
+ {
+     color: #444;
+ }
+
+ /*
+align the text to the left in the fourth box
+ */
+ ul
+ {
+     text-align: left;
+     
+ }
+
+ /*
+ once the link has been visited, turn it red so user knows
+ */
+a:visited 
+{
+    color: rgba(255, 115, 115, 0.89);
+}
+ 
+ /*
 creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line.
 */
 .container
@@ -60,7 +92,7 @@ creates a container class to hold the structure and content for the boxes. wraps
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 700px;
     flex-wrap: wrap;
     padding: 40px 0;
 }
@@ -107,7 +139,6 @@ creates a mouse hover effect on the boxes
 {
     transform: translateY(-50px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-    
 }
 
 /*
@@ -172,3 +203,10 @@ adjusts the texts color/format inside of each box
    transition: 0.5%;
 }
 
+/*
+turn our mouse into a crosshair when hovering over a div section of the page
+*/
+div
+{
+    cursor:crosshair;
+}

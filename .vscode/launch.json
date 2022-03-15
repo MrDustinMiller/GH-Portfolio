@@ -11,12 +11,11 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         },
-
         {
-            "type": "msedge",
+            "type": "pwa-msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\dsmil\\Desktop\\Github Portfolio\\index.html"
+            "file": "c:\\Users\\dsmil\\Desktop\\GH Portfolio\\index.html"
         }
     ]
 }
