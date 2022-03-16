@@ -70,7 +70,7 @@ controls the color of our heading
  }
 
  /*
-align the text to the left in the fourth box
+align the text to the left in the project box
  */
  ul
  {
@@ -101,7 +101,7 @@ background color there is behind it with no formatting.
 }
 
 /*
-create a card class that controls the size/how the cards are layered and spaced out
+create a card class that controls the size/how the cards are layered and spaced out. box shadow properties in order: vertical, horizontal, blue, color.
 */
 .container .card
 {
@@ -136,7 +136,8 @@ creats a class that manipulates our cards into boxes. formats/designs the boxes 
 }
 
 /*
-creates a mouse hover effect on the boxes
+creates a mouse hover effect on the boxes.translate allows us moves our boxes when hovered over. the (Y) moves the boxes along the y axis.
+the (-50px) tells the transform property to make our boxes pop up.
 */
 .container .card:hover .box 
 {
@@ -170,7 +171,7 @@ move the box's header to center
 }
 
 /*
-puts box number in the back of the box behind content
+puts box number in the back of the box behind content. will have no pointer events avaiable. 
 */
 .container .card .box .boxHeading h2
 {
@@ -179,7 +180,6 @@ puts box number in the back of the box behind content
     right: 30px;
     font-size: 8em;
     color: rgba(0, 0, 0, 0.05);
-    transition: 0.5%;
     pointer-events: none;
 }
 
@@ -191,7 +191,6 @@ controls the box heading color and font size
     font-size: 1.8em;
     color: rgb(0, 0, 0);
     z-index: 1;
-    transition: 0.5%;
 }
 
 /*
@@ -203,13 +202,5 @@ adjusts the texts color/format inside of each box
    font-weight: 300;
    color:rgb(255,255,255);
    z-index: 1;
-   transition: 0.5%;
 }
 
-/*
-turn our mouse into a crosshair when hovering over a div section of the page
-*/
-div
-{
-    cursor:crosshair;
-}
