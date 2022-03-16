@@ -39,7 +39,7 @@ resizes the original image to fit the display better
 
 /*
 flex property makes content more responsive and be able to accomany multiple lines, align-items aligns flex items at the center.
-linear gradients give us the doubl color. the percentages and degrees give us the diagnal shape and how deep a color is.
+linear gradients give us the double color. the degrees give us the diagnal shape. the percentages determine how much of the color is being shown.
 */
 body
 {
@@ -70,7 +70,7 @@ controls the color of our heading
  }
 
  /*
-align the text to the left in the fourth box
+align the text to the left in the project box
  */
  ul
  {
@@ -79,7 +79,7 @@ align the text to the left in the fourth box
  }
 
  /*
- once the link has been visited, turn it red so user knows
+ once the link has been visited, turn it purple so user knows
  */
 a:visited 
 {
@@ -87,7 +87,8 @@ a:visited
 }
  
  /*
-creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line.
+creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line. without this the boxes would be whatever 
+background color there is behind it with no formatting.
 */
 .container
 {
@@ -100,7 +101,7 @@ creates a container class to hold the structure and content for the boxes. wraps
 }
 
 /*
-create a card class that controls the size/how the cards are layered and spaced out
+create a card class that controls the size/how the cards are layered and spaced out. box shadow properties in order: vertical, horizontal, blue, color.
 */
 .container .card
 {
@@ -135,7 +136,8 @@ creats a class that manipulates our cards into boxes. formats/designs the boxes 
 }
 
 /*
-creates a mouse hover effect on the boxes
+creates a mouse hover effect on the boxes.translate allows us moves our boxes when hovered over. the (Y) moves the boxes along the y axis.
+the (-50px) tells the transform property to make our boxes pop up.
 */
 .container .card:hover .box 
 {
@@ -169,7 +171,7 @@ move the box's header to center
 }
 
 /*
-puts box number in the back of the box behind content
+puts box number in the back of the box behind content. will have no pointer events avaiable. 
 */
 .container .card .box .boxHeading h2
 {
@@ -178,7 +180,6 @@ puts box number in the back of the box behind content
     right: 30px;
     font-size: 8em;
     color: rgba(0, 0, 0, 0.05);
-    transition: 0.5%;
     pointer-events: none;
 }
 
@@ -190,7 +191,6 @@ controls the box heading color and font size
     font-size: 1.8em;
     color: rgb(0, 0, 0);
     z-index: 1;
-    transition: 0.5%;
 }
 
 /*
@@ -202,13 +202,4 @@ adjusts the texts color/format inside of each box
    font-weight: 300;
    color:rgb(255,255,255);
    z-index: 1;
-   transition: 0.5%;
-}
-
-/*
-turn our mouse into a crosshair when hovering over a div section of the page
-*/
-div
-{
-    cursor:crosshair;
 }
