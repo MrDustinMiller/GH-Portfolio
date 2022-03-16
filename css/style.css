@@ -39,7 +39,7 @@ resizes the original image to fit the display better
 
 /*
 flex property makes content more responsive and be able to accomany multiple lines, align-items aligns flex items at the center.
-linear gradients give us the doubl color. the percentages and degrees give us the diagnal shape and how deep a color is.
+linear gradients give us the double color. the degrees give us the diagnal shape. the percentages determine how much of the color is being shown.
 */
 body
 {
@@ -79,7 +79,7 @@ align the text to the left in the fourth box
  }
 
  /*
- once the link has been visited, turn it red so user knows
+ once the link has been visited, turn it purple so user knows
  */
 a:visited 
 {
@@ -87,7 +87,8 @@ a:visited
 }
  
  /*
-creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line.
+creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line. without this the boxes would be whatever 
+background color there is behind it with no formatting.
 */
 .container
 {
