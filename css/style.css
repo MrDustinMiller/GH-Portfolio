@@ -12,7 +12,7 @@ remove default margin/padding
 
 
 /*
-ceates some padding between the page header and the boxes
+ceates some padding between the page header and the boxes. adds space to the right after our image and header
 */
 .pageHeader 
 {
@@ -20,7 +20,7 @@ ceates some padding between the page header and the boxes
 }
 
 /*
-cuts border of image to be rounded and adds some margin to the image for formatting
+cuts border of image to be rounded and adds some margin to the image for formatting. adds space to the left of our image.
 */
 img 
 {
@@ -87,8 +87,8 @@ a:visited
 }
  
  /*
-creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line. without this the boxes would be whatever 
-background color there is behind it with no formatting.
+creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line. without this the boxes 
+would be whatever background color there is behind it with no formatting.
 */
 .container
 {
@@ -101,7 +101,7 @@ background color there is behind it with no formatting.
 }
 
 /*
-create a card class that controls the size/how the cards are layered and spaced out. box shadow properties in order: vertical, horizontal, blue, color.
+create a card class that controls the size/how the cards are layered and spaced out. box shadow properties in order: vertical, horizontal, blur, color.
 */
 .container .card
 {
