@@ -24,7 +24,8 @@ cuts border of image to be rounded and adds some margin to the image for formatt
 */
 img 
 {
-    margin: 7%;
+    margin: 9%;
+    padding: 2.5%;
     border-radius: 50%;
 }
 
@@ -50,7 +51,7 @@ body
     align-items: center;
     min-height: 100vh;
     background-color: #f87f73;
-    background-image: linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #00ffd5 60%, #00ffd5 60%);
+    background-image: linear-gradient( 2000deg, #f87f73 0%, #f87f73 60%, #00ffd5 40%, #00ffd5 40%);
 }
 
 /*
@@ -202,4 +203,9 @@ adjusts the texts color/format inside of each box
    font-weight: 300;
    color:rgb(255,255,255);
    z-index: 1;
+}
+
+.wakaanYT {
+    position: absolute;
+    top: 100%;
 }
