@@ -39,7 +39,7 @@ resizes the original image to fit the display better
 }
 
 /*
-flex property makes content more responsive and be able to accomany multiple lines, align-items aligns flex items at the center.
+flex property makes content more responsive and be contained together, align-items aligns flex items at the center.
 linear gradients give us the double color. the degrees give us the diagnal shape. the percentages determine how much of the color is being shown.
 */
 body
@@ -88,8 +88,13 @@ a:visited
 }
  
  /*
+<<<<<<< HEAD
 creates a container class to hold the structure and content for the boxes. wraps them on multiple lines instead of one continous line. without this the boxes 
 would be whatever background color there is behind it with no formatting.
+=======
+creates a container class to hold the structure and content for the boxes. without this wrap value the boxes would be on one continous line on the screen and not wrapped on 
+multiple.
+>>>>>>> 1a31e1148752ccd6c849c4abd536fa1645f0b462
 */
 .container
 {
@@ -102,7 +107,11 @@ would be whatever background color there is behind it with no formatting.
 }
 
 /*
+<<<<<<< HEAD
 create a card class that controls the size/how the cards are layered and spaced out. box shadow properties in order: vertical, horizontal, blur, color.
+=======
+create a card class that controls the size/how the cards are layered and spaced out. box shadow values in order: vertical, horizontal, blur, color.
+>>>>>>> 1a31e1148752ccd6c849c4abd536fa1645f0b462
 */
 .container .card
 {
@@ -118,7 +127,7 @@ create a card class that controls the size/how the cards are layered and spaced 
 }
 
 /*
-creats a class that manipulates our cards into boxes. formats/designs the boxes look
+creates a class that manipulates our cards into boxes. formats/designs the boxes look.
 */
 .container .card .box 
 {
@@ -137,8 +146,8 @@ creats a class that manipulates our cards into boxes. formats/designs the boxes 
 }
 
 /*
-creates a mouse hover effect on the boxes.translate allows us moves our boxes when hovered over. the (Y) moves the boxes along the y axis.
-the (-50px) tells the transform property to make our boxes pop up.
+creates a mouse hover effect on the boxes.  transform property tells us that the items can be transformed like rotated, moved, skewed. translate allows us moves our boxes 
+when hovered over. the (Y) moves the boxes along the y axis. the (-50px) tells the us to make our boxes pop up.
 */
 .container .card:hover .box 
 {
